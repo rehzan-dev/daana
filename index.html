@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DAANA — Pakistani Lentils, Elevated</title>
+<meta name="description" content="DAANA — everyday Pakistani daal, selected and presented with uncommon care. Lal Masoor, Dhuli Moong, Chana Dal.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+
+<!-- Floating lentil particles (global, behind content). Hidden on the
+     photo section so no CG sits on top of the real daal photograph. -->
+<canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+<!-- ================= Header ================= -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a class="logo" href="#hero" aria-label="DAANA home">
+      <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="18.5" fill="none" stroke="#c9a227" stroke-width="1.5"/>
+        <path d="M20 29c-4.5-2.2-7-6-7-11 4.5 0 7 2.4 7 6.5C20 22 22.5 19.5 27 19.5c0 5-2.5 8.8-7 9.5z" fill="#c9a227"/>
+      </svg>
+      <span class="logo-text"><span class="logo-name">DAANA</span><span class="logo-sub">Pakistani Lentils</span></span>
+    </a>
+    <div class="chapter-indicator" aria-hidden="true">
+      <span class="chapter-label">Now tasting</span>
+      <span class="chapter-name" id="chapterName">Origin</span>
+    </div>
+    <nav class="header-nav">
+      <a href="#collection">The range</a>
+      <a href="#table">Our story</a>
+      <a href="#collection" class="btn btn-ghost">Discover DAANA</a>
+    </nav>
+  </div>
+  <div class="progress-bar" id="progressBar"></div>
+</header>
+
+<!-- Left scroll rail -->
+<div class="scroll-rail" aria-hidden="true"><span>Scroll</span></div>
+<!-- Right chapter counter -->
+<div class="chapter-counter" aria-hidden="true"><span id="chapterCount">01 / 08</span></div>
+
+<main>
+
+<!-- ================= 01 · Hero — Origin ================= -->
+<section class="hero" id="hero" data-chapter="Origin" data-index="01">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-copy">
+    <p class="kicker">Pakistani lentils, elevated</p>
+    <h1>The pulse<br><em>of home.</em></h1>
+    <p class="lede">Familiar comfort, selected with care and presented with the ceremony it deserves.</p>
+    <a class="begin-link" href="#reveal">Begin the story <span class="begin-line" aria-hidden="true"></span></a>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- ================= 02 · Reveal ================= -->
+<section class="reveal-section" id="reveal" data-chapter="The Reveal" data-index="02">
+  <div class="reveal-sticky">
+    <div class="reveal-copy">
+      <p class="kicker">The first reveal</p>
+      <h2>A pantry essential, <em>reframed.</em></h2>
+      <p class="body">Thoughtful sourcing. Beautifully clean grains. A richer expression of the daal we know by heart.</p>
+      <p class="detail"><span class="detail-num">01</span> Selected for colour, texture and a consistent cook.</p>
+    </div>
+    <div class="reveal-pack">
+      <img src="assets/pack-masoor.jpg" alt="DAANA Lal Masoor — red lentils, 1 kg pouch" width="1024" height="1536">
+    </div>
+  </div>
+</section>
+
+<!-- ================= 03 · Turn — scroll-scrubbed rotation ================= -->
+<section class="scene scene-turn" id="turn" data-chapter="In Motion" data-index="03">
+  <div class="scene-sticky">
+    <div class="scene-media">
+      <video class="scene-video" data-src="videos/rotation.mp4" muted playsinline preload="none" poster="posters/rotation.jpg" aria-hidden="true"></video>
+      <canvas class="scene-canvas" aria-label="DAANA Lal Masoor pouch rotating"></canvas>
+      <div class="scene-shade" aria-hidden="true"></div>
+    </div>
+    <div class="scene-copy">
+      <p class="kicker">Turn it in the light</p>
+      <h2>Every grain has <em>character.</em></h2>
+      <p class="body">From the glow of masoor to the soft gold of moong — each variety brings its own rhythm to the pot.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 04 · Release ================= -->
+<section class="release-section" id="release" data-chapter="The Burst" data-index="04">
+  <div class="release-sticky">
+    <div class="release-copy">
+      <p class="kicker">Release the flavour</p>
+      <h2>Small grains. <em>Full expression.</em></h2>
+      <p class="body">Earthy, nutty, delicate, bold. One ingredient with a thousand ways to feel like home.</p>
+    </div>
+    <figure class="release-bowls">
+      <img src="assets/lentils-bowls.jpg" alt="Three bowls of raw lentils — masoor, moong and chana dal" width="1672" height="941">
+      <figcaption>Masoor · Moong · Chana — cleaned, sorted, ready.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ================= 05 · Pour — scroll-scrubbed pour video ================= -->
+<section class="scene scene-pour" id="pour" data-chapter="The Pour" data-index="05">
+  <div class="scene-sticky">
+    <div class="scene-media">
+      <video class="scene-video" data-src="videos/pour.mp4" muted playsinline preload="none" poster="posters/pour.jpg" aria-hidden="true"></video>
+      <canvas class="scene-canvas" aria-label="Lentils pouring from the DAANA pouch into a bowl"></canvas>
+      <div class="scene-shade" aria-hidden="true"></div>
+    </div>
+    <div class="scene-copy pour-copy">
+      <p class="kicker">The perfect pour</p>
+      <h2>From field to <em>your bowl.</em></h2>
+      <p class="body">Cleaned, sorted and packed to preserve the quiet goodness inside every lentil.</p>
+    </div>
+    <p class="pour-note" id="pourNote">Slow down. Let the tarka sing.</p>
+  </div>
+</section>
+
+<!-- ================= 06 · Collection ================= -->
+<section class="collection" id="collection" data-chapter="The Collection" data-index="06">
+  <div class="collection-head">
+    <p class="kicker">The DAANA collection</p>
+    <h2>Three expressions. <em>One table.</em></h2>
+  </div>
+  <div class="pack-row" id="packRow">
+    <button class="pack-card is-selected" data-pack="masoor" type="button" aria-pressed="true">
+      <img src="assets/pack-masoor.jpg" alt="DAANA Lal Masoor pouch" width="1024" height="1536">
+      <span class="pack-card-name">Lal Masoor</span>
+      <span class="pack-card-tag">Golden &amp; earthy</span>
+    </button>
+    <button class="pack-card" data-pack="moong" type="button" aria-pressed="false">
+      <img src="assets/pack-moong.jpg" alt="DAANA Dhuli Moong pouch" width="1024" height="1536">
+      <span class="pack-card-name">Dhuli Moong</span>
+      <span class="pack-card-tag">Light &amp; golden</span>
+    </button>
+    <button class="pack-card" data-pack="chana" type="button" aria-pressed="false">
+      <img src="assets/pack-chana.jpg" alt="DAANA Chana Dal pouch" width="1024" height="1536">
+      <span class="pack-card-name">Chana Dal</span>
+      <span class="pack-card-tag">Nutty &amp; substantial</span>
+    </button>
+  </div>
+  <div class="pack-detail" id="packDetail">
+    <div class="pack-detail-tabs" role="tablist" aria-label="Choose a lentil">
+      <button class="pack-tab is-active" data-pack="masoor" role="tab" type="button">Lal Masoor</button>
+      <button class="pack-tab" data-pack="moong" role="tab" type="button">Dhuli Moong</button>
+      <button class="pack-tab" data-pack="chana" role="tab" type="button">Chana Dal</button>
+    </div>
+    <p class="pack-detail-desc" id="packDesc">A quick-cooking red lentil with a velvety finish, selected for everyday daal and slow Sunday lunches.</p>
+    <p class="pack-detail-meta"><span>Selection · <strong id="packSelection">Single-origin harvest</strong></span><span>Cook · <strong id="packCook">15 min</strong></span><span>Pack · <strong>1 kg</strong></span></p>
+  </div>
+</section>
+
+<!-- ================= 07 · Table — full-bleed photograph ================= -->
+<section class="table-section" id="table" data-chapter="Our Table" data-index="07">
+  <div class="table-bg" aria-hidden="true"></div>
+  <div class="table-shade" aria-hidden="true"></div>
+  <div class="table-copy">
+    <p class="kicker">A recipe older than memory</p>
+    <h2>Not just food. <em>A way back.</em></h2>
+    <p class="body">The hiss of tarka. A steel spoon against the pot. The first warm mouthful after a long day. DAANA honours the everyday rituals that make a table feel like ours.</p>
+    <p class="urdu-quote">Har daana, ghar ki kahani.</p>
+  </div>
+</section>
+
+<!-- ================= 08 · CTA ================= -->
+<section class="cta" id="cta" data-chapter="DAANA" data-index="08">
+  <div class="cta-copy">
+    <p class="kicker">Bring home the good stuff</p>
+    <h2>Make room for <em>DAANA.</em></h2>
+    <p class="body">Begin with the grain. Finish with the memory.</p>
+    <a class="btn btn-gold" href="#collection">Discover the collection</a>
+  </div>
+  <div class="cta-pack" aria-hidden="true">
+    <img src="assets/pack-masoor.jpg" alt="" width="1024" height="1536">
+  </div>
+</section>
+
+</main>
+
+<!-- ================= Footer ================= -->
+<footer class="site-footer" id="footer">
+  <div class="footer-bar" aria-hidden="true"></div>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="logo" href="#hero" aria-label="DAANA home">
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="18.5" fill="none" stroke="#c9a227" stroke-width="1.5"/>
+          <path d="M20 29c-4.5-2.2-7-6-7-11 4.5 0 7 2.4 7 6.5C20 22 22.5 19.5 27 19.5c0 5-2.5 8.8-7 9.5z" fill="#c9a227"/>
+        </svg>
+        <span class="logo-text"><span class="logo-name">DAANA</span><span class="logo-sub">Pakistani Lentils</span></span>
+      </a>
+      <p>Everyday Pakistani daal, selected and presented with uncommon care.</p>
+    </div>
+    <nav class="footer-col" aria-label="Explore">
+      <h3>Explore</h3>
+      <a href="#collection">The collection</a>
+      <a href="#table">Our story</a>
+      <a href="#pour">From field to bowl</a>
+    </nav>
+    <nav class="footer-col" aria-label="The range">
+      <h3>The range</h3>
+      <a href="#collection" data-pack-link="masoor">Lal Masoor</a>
+      <a href="#collection" data-pack-link="moong">Dhuli Moong</a>
+      <a href="#collection" data-pack-link="chana">Chana Dal</a>
+    </nav>
+    <div class="footer-col footer-urdu">
+      <p class="urdu-word" lang="ur">دانا</p>
+      <p>Har daana, ghar ki kahani. Born from the rituals of the Pakistani table.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 DAANA Foods. All rights reserved.</span>
+    <span>Premium lentils · Pakistan</span>
+    <a href="#hero">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="script.js?v=1"></script>
+</body>
+</html>
